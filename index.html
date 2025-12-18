@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The social media platform for dreams and chill vibes"
+    />
+    <meta property="og:title" content="Ólos | We just be vinbin'" />
+    <meta property="og:url" content="https://www.olos.com" />
+    <meta property="og:type" content="social media" />
+    <meta property="og:image" content="images/meta/meta_main_picture.jpg" />
+    <!-- will come back to this -->
+    <script
+      src="https://kit.fontawesome.com/dd4a452c26.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aladin&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/olos-favicon.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Ólos | Social Media</title>
+  </head>
+  <header
+    class="fixed top-4 left-4 bg-offWhite z-10 px-5 pt-5 pb-0 shadow-md w-headerCalc md:w-40 rounded-xl"
+  >
+    <nav id="nav">
+      <a href="#"
+        ><img
+          class="mx-auto md:w-full"
+          src="/olos-logo-main-peach.svg"
+          alt="Ólos logo"
+      /></a>
+      <div
+        class="close flex flex-col max-h-0 overflow-hidden transition-all duration-700"
+        id="dropdown"
+      ></div>
+      <img
+        class="px-4 pt-4 pb-2 mx-auto"
+        id="dropdown-icon"
+        src="./star-dropdown.svg"
+        alt="Dropdown icon"
+      />
+    </nav>
+  </header>
+
+  <body class="bg-gradient-to-r from-peach via-offWhite to-peach">
+    <section
+      class="h-auto mt-36 xs:mt-0 xs:h-screen md:h-screen75 section"
+      id="hero"
+    >
+      <div class="flex flex-col items-center gap-8">
+        <div>
+          <h1
+            class="w-fit text-7xl md:text-8xl font-light my-0 mx-auto text-center font-averia"
+          >
+            Welcome to
+            <img
+              class="relative h-14 md:h-20 m-auto"
+              src="./olos-logo-main-plum.svg"
+              alt="Ólos logo"
+            />
+          </h1>
+        </div>
+        <div class="relative flex flex-col items-center w-fit">
+          <p class="font-normal text-4xl text-center w-2/3 font-alegreya">
+            The social media platform for
+            <span class="text-dusk font-bold">dreams</span> and
+            <span class="text-plum font-bold">chill vibes</span>
+          </p>
+          <img
+            class="hidden absolute -z-10 -bottom-1 left-44 md:block"
+            src="./stars-dreams.svg"
+            alt="Dreams stars"
+          />
+          <img
+            class="hidden absolute -z-10 -bottom-3 right-44 md:block"
+            src="./stars-plum.svg"
+            alt="Chill vibes stars"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <article id="message"></article>
+      <div>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4" id="feed-1">
+          <li class="min-w-96 flex justify-center items-center col-span-3">
+            <span
+              class="w-12 h-12 border-4 border-dusk border-b-transparent rounded-full animate-spin inline-block"
+            ></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

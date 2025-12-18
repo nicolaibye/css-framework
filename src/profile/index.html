@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="${user.username}'s Ólos profile" />
+    <meta property="og:title" content="Ólos | ${user.username}" />
+    <meta
+      property="og:url"
+      content="https://www.olos.com/src/profile/id=${user.id}"
+    />
+    <meta property="og:type" content="social media" />
+    <meta property="og:image" content="images/meta/meta_main_picture.jpg" />
+    <!-- will come back to this -->
+    <script
+      src="https://kit.fontawesome.com/dd4a452c26.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aladin&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/olos-favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Ólos | ${user.username}</title>
+  </head>
+  <header
+    class="fixed top-4 left-4 bg-offWhite z-10 px-5 pt-5 pb-0 shadow-md w-headerCalc md:w-40 rounded-xl"
+  >
+    <nav id="nav">
+      <a href="/"
+        ><img
+          class="mx-auto md:w-full"
+          src="/olos-logo-main-peach.svg"
+          alt="Ólos logo"
+      /></a>
+      <div
+        class="close flex flex-col max-h-0 overflow-hidden transition-all duration-700"
+        id="dropdown"
+      ></div>
+      <img
+        class="px-4 pt-4 pb-2 mx-auto"
+        id="dropdown-icon"
+        src="/star-dropdown.svg"
+        alt="Dropdown icon"
+      />
+    </nav>
+  </header>
+
+  <body class="bg-gradient-to-r from-peach via-offWhite to-peach">
+    <section
+      class="h-auto mt-36 md:mt-0 md:h-143 section items-center"
+      id="profile-bio"
+    >
+      <div class="flex flex-col gap-6 items-center text-center">
+        <div class="flex gap-9 items-center font-normal text-base text-plum">
+          <div class="w-auto md:w-22">
+            <p class="font-alegreya">Followers</p>
+            <p class="text-3xl font-normal font-aladin">0</p>
+          </div>
+          <div class="bg-peach w-24 h-24 rounded-full"></div>
+          <div class="w-auto md:w-22">
+            <p class="alegreya">Posts</p>
+            <p class="text-3xl font-normal font-aladin">0</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 mb-2 items-center">
+          <div class="bg-peach w-52 h-4 rounded-full"></div>
+          <div class="bg-peach w-72 h-4 rounded-full"></div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center">
+          <button class="profile-btn my-1 md:my-0 md:mx-1" id="follow-btn">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </button>
+          <button class="profile-btn my-1 md:my-0 md:mx-1" id="message-btn">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </button>
+          <button class="profile-btn my-1 md:my-0 md:mx-1" id="share-btn">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </button>
+          <button class="profile-btn my-1 md:my-0 md:mx-1" id="more-btn">
+            &nbsp;&nbsp;&nbsp;
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="section flex-col w-fit my-0 mx-auto items-baseline">
+      <article id="message"></article>
+      <div class="mx-auto md:mx-0">
+        <button class="profile-btn bg-dusk text-offWhite" id="latest-btn">
+          Latest
+        </button>
+        <button class="profile-btn" id="oldest-btn">Oldest</button>
+      </div>
+      <hr class="border-top-2 border-dusk my-4 w-full" />
+      <ul
+        class="profile-feed-grid grid grid-cols-1 md:grid-cols-2 gap-4"
+        id="profile-feed-grid"
+      >
+        <li class="mt-8 min-w-96 flex justify-center items-center col-span-3">
+          <span
+            class="w-12 h-12 border-4 border-dusk border-b-transparent rounded-full animate-spin inline-block"
+          ></span>
+        </li>
+      </ul>
+    </section>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

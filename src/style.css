@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  body::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: theme("colors.offWhite");
+  }
+
+  body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: theme("colors.plum");
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: theme("colors.dreams");
+  }
+}
+
+@layer components {
+  .section {
+    @apply flex flex-col p-4 md:p-8 justify-center items-center;
+  }
+
+  .btn {
+    @apply font-averia w-fit text-base font-bold text-dusk bg-offWhite py-2 px-5 border-none rounded-xl cursor-pointer hover:text-offWhite hover:bg-night transition-all duration-200 ease-in-out;
+  }
+
+  .profile-btn {
+    @apply font-averia w-fit text-base font-bold text-dusk bg-transparent py-2 px-5 border-2 border-dusk rounded-xl cursor-pointer hover:text-offWhite hover:bg-dusk transition-all duration-200 ease-in-out;
+  }
+
+  .message {
+    @apply p-4 mb-6 border-2 border-peach text-dusk bg-white rounded-md text-center col-span-2;
+  }
+
+  .error {
+    @apply text-night border-red-600 bg-red-300;
+  }
+
+  .success {
+    @apply text-night border-green-700 bg-green-300;
+  }
+
+  .warning {
+    @apply text-night border-orange-500 bg-orange-300;
+  }
+}
+
+@layer utilities {
+  .post-overlay-description::-webkit-scrollbar,
+  .post-overlay-comments-list::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 10px;
+  }
+
+  .post-overlay-description::-webkit-scrollbar-thumb,
+  .post-overlay-comments-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+
+  .post-overlay-description::-webkit-scrollbar {
+    background-color: rgba(42, 17, 75, 0.2);
+  }
+  .post-overlay-comments-list::-webkit-scrollbar {
+    background-color: theme("colors.dusk");
+  }
+
+  .post-overlay-comments-list::-webkit-scrollbar-thumb,
+  .post-overlay-description::-webkit-scrollbar-thumb {
+    background-color: theme("colors.offWhite");
+  }
+}

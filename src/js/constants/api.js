@@ -1,0 +1,2 @@
+export const baseUrl = "https://v2.api.noroff.dev/";
+export const noroffKey = "72ebb5d0-a2b3-4188-88b1-c7c512fe67c0";

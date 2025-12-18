@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The social media platform for dreams and chill vibes"
+    />
+    <meta property="og:title" content="Ólos | Sign up" />
+    <meta property="og:url" content="https://www.olos.com" />
+    <meta property="og:type" content="social media" />
+    <meta property="og:image" content="images/meta/meta_main_picture.jpg" />
+    <!-- will come back to this -->
+    <script
+      src="https://kit.fontawesome.com/dd4a452c26.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aladin&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/olos-favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Ólos | Sign up</title>
+  </head>
+  <header
+    class="fixed top-4 left-4 bg-offWhite z-10 px-5 pt-5 pb-0 shadow-md w-headerCalc md:w-40 rounded-xl"
+  >
+    <nav id="nav">
+      <a href="/"
+        ><img
+          class="mx-auto md:w-full"
+          src="/olos-logo-main-peach.svg"
+          alt="Ólos logo"
+      /></a>
+      <div
+        class="close flex flex-col max-h-0 overflow-hidden transition-all duration-700"
+        id="dropdown"
+      ></div>
+      <img
+        class="px-4 pt-4 pb-2 mx-auto"
+        id="dropdown-icon"
+        src="/star-dropdown.svg"
+        alt="Dropdown icon"
+      />
+    </nav>
+  </header>
+
+  <body class="bg-gradient-to-r from-night via-dreams to-night">
+    <section class="section mt-32 md:mt-0 md:h-userCalc items-center">
+      <div class="text-center w-full md:w-102">
+        <h1 class="font-light text-5xl text-offWhite mb-6 font-averia">
+          Sign up for your
+          <img
+            class="mx-auto"
+            src="/olos-logo-main-peach.svg"
+            alt="Ólos logo"
+          />
+          account
+        </h1>
+        <article id="message"></article>
+        <div class="relative bg-offWhite p-9 rounded-xl">
+          <form class="flex flex-col gap-6 mb-3 reg" id="register-form">
+            <input
+              class="border-2 border-dusk rounded-md p-3 bg-offWhite text-dusk font-normal text-base focus:outline-dusk focus:caret-dusk placeholder-dusk"
+              type="name"
+              name="name"
+              id="user-name"
+              placeholder="Username *"
+              pattern="[a-zA-Z0-9_]+"
+              title="Please only use letters, numbers and underscores"
+              maxlength="20"
+              required
+            />
+            <input
+              class="border-2 border-dusk rounded-md p-3 bg-offWhite text-dusk font-normal text-base focus:outline-dusk focus:caret-dusk placeholder-dusk"
+              type="email"
+              name="email"
+              id="user-email"
+              placeholder="Email *"
+              pattern="^[^@]+@(stud\.|)(noroff\.no)$"
+              title="Please use a valid Noroff email"
+              required
+            />
+            <input
+              class="border-2 border-dusk rounded-md p-3 bg-offWhite text-dusk font-normal text-base focus:outline-dusk focus:caret-dusk placeholder-dusk"
+              type="password"
+              name="password"
+              id="user-password"
+              placeholder="Password *"
+              required
+              minlength="8"
+            />
+            <textarea
+              class="border-2 border-dusk rounded-md p-3 bg-offWhite text-dusk font-normal text-base focus:outline-dusk focus:caret-dusk placeholder-dusk resize-none"
+              name="bio"
+              id="user-bio"
+              placeholder="Bio"
+              rows="3"
+            ></textarea>
+            <input
+              class="border-2 border-dusk rounded-md p-3 bg-offWhite text-dusk font-normal text-base focus:outline-dusk focus:caret-dusk placeholder-dusk"
+              type="url"
+              name="avatarUrl"
+              id="avatarUrl"
+              placeholder="Profile picture URL"
+            />
+            <input
+              class="btn w-full rounded-md text-offWhite bg-dusk cursor-pointer font-bold font-averia"
+              type="submit"
+              value="SIGN UP"
+              id="submit"
+            />
+          </form>
+          <p class="text-dusk font-light text-base font-averia">
+            By signing up you agree to our
+            <a class="underline" href="#">policies.</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
