@@ -17,7 +17,7 @@ export function createNavContent() {
                 <input name="search" type="text" class="hidden opacity-0 transition-opacity duration-500 absolute -top-0.5 h-8 w-full border-2 border-dusk rounded-md text-sm p-2 text-night bg-transparent caret-night focus:outline-none focus:border-2 focus:border-peach" id="search-input" autocomplete="off">
                 </li>
                 <li class="text-dreams" id="create"><a>Create</a></li>
-                <li class="text-night flex justify-between items-center"><a id="profile" href="/src/profile/?user=${user}">Profile</a><i class="fa-solid fa-arrow-right-from-bracket text-night" id="logout"></i></li>
+                <li class="text-night flex justify-between items-center"><a id="profile" href="/src/profile/?user=${user}">Profile</a><i class="fa-solid fa-arrow-right-from-bracket cursor-pointer text-night" id="logout"></i></li>
             </ul>
             <hr class="border-top-2 border-peach my-4 w-auto">
             <div class="flex flex-col gap-1 items-left font-normal w-auto text-sm">
@@ -43,7 +43,7 @@ export function createNavContent() {
             </div>`;
     }
     dropdown.style.maxHeight = "300px";
-    dropdownIcon.style.transform = "rotate(-45deg)";
+    dropdownIcon.style.transform = "rotate(-180deg)";
     dropdown.classList.add("open");
     dropdown.classList.remove("close");
   } else {
