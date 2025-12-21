@@ -1,8 +1,8 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/xVM10Eiy)
 
-# JavaScript 2 CA
+# JavaScript 2 CA | Ólos
 
-This project is a social media platform written with Vite. You can check out the live website [here.](https://olos.netlify.app/)
+This project is a social media platform written with Vite and Tailwind CSS. You can check out the live website [here.](https://olos.netlify.app/)
 
 ## How to run the project
 
@@ -53,7 +53,6 @@ npx serve dist
 ### Project Structure
 
 ```bash
-/src/css/        #css divided into sections of the website
 /src/js/
 constants/       #Constant variables getting used throughout the project
 data/            #Api calls
@@ -74,6 +73,7 @@ style.css        #Connects the .css from src/css/ to the project.
 ### Dependencies
 
 - Vite
+- Tailwind CSS
 
 ### Contribution
 
